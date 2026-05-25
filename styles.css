@@ -549,3 +549,136 @@ body {
 .portfolio-img:hover {
     transform: scale(1.02);
 }
+
+/* Poses Section */
+.poses-section {
+    padding: 120px 5%;
+    background-color: #EFEFEA; /* Soft muted background */
+    text-align: center;
+}
+
+.poses-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.poses-intro {
+    font-size: 0.95rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    font-weight: 300;
+}
+
+.poses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+.pose-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.pose-image-wrapper {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.pose-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.pose-card:hover .pose-image {
+    transform: scale(1.05);
+}
+
+.pose-content {
+    padding: 35px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pose-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pose-sanskrit {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.pose-tag {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.pose-tag.beginner {
+    background-color: #E2E8F0;
+    color: #4A5568;
+}
+
+.pose-tag.intermediate {
+    background-color: #FEFCBF;
+    color: #975A16;
+}
+
+.pose-content h3 {
+    font-size: 1.6rem;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.pose-desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.pose-meta {
+    font-size: 0.8rem;
+    color: #555;
+    background-color: #F9F9F7;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+    line-height: 1.7;
+    margin-top: auto;
+}
+
+@media (max-width: 992px) {
+    .poses-grid {
+        grid-template-columns: 1fr;
+    }
+}
