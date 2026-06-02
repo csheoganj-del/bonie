@@ -3,213 +3,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BONIE Yoga Studio</title>
+    <title>BONIE — Rediscover Your Calm. Master Your Breath.</title>
+    <meta name="description" content="BONIE Yoga Studio — Holistic yoga and breathwork for clarity, connection, and inner peace. Book private sessions, group workshops, and online courses.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
         <div class="logo">
             <span class="logo-text">BONIE</span>
-            <span class="logo-subtext">YOGA STUDIO</span>
+            <span class="logo-tagline">YOGA STUDIO</span>
         </div>
-        <nav class="nav">
-            <a href="#about">ABOUT</a>
-            <a href="#team">TEAM</a>
-            <a href="#classes">CLASSES</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#poses">POSES</a>
-            <a href="#private">PRIVATE</a>
-            <a href="#contact">CONTACT</a>
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#offerings">Offerings</a>
+            <a href="#poses">Asanas</a>
+            <a href="#testimonials">Journal</a>
         </nav>
-        <a href="#book" class="btn-primary">BOOK A CLASS</a>
+        <a href="#book" class="btn-book">Book a Session</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('images/hero.png');">
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home">
+            <div class="hero-bg" style="background-image: url('images/hero_new.png');"></div>
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Discover<br>Harmony Within</h1>
-                <p>Find your inner balance at our holistic yoga studio.<br>Experience traditional practices in a modern setting.</p>
+                <p class="hero-eyebrow">Holistic breathwork for clarity and connection</p>
+                <h1>Rediscover<br><em>Your Calm.</em><br>Master Your Breath.</h1>
+                <a href="#offerings" class="btn-outline">Start Your Journey</a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span></span>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <div class="about-container">
-                <div class="about-image-wrapper">
-                    <img src="images/about.png" alt="Yoga pose" class="about-image">
+        <!-- ========== STATS STRIP ========== -->
+        <section class="stats-strip">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years of Practice</span>
                 </div>
-                <div class="about-text">
-                    <span class="subtitle">WELCOME TO BONIE</span>
-                    <h2>Embark on a<br>Journey of Self-<br>Discovery</h2>
-                    <p>At Bonie, we invite you to experience a transformative voyage of self-discovery through yoga. Our studio is more than a space; it's a community where you can come as you are and leave rejuvenated, nourished by the harmony of mind, body, and spirit.</p>
-                    <a href="#learn-more" class="btn-secondary">LEARN MORE</a>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">1,200+</span>
+                    <span class="stat-label">Students Transformed</span>
                 </div>
-            </div>
-        </section>
-
-        <section id="team" class="ceo-section">
-            <div class="ceo-container">
-                <div class="ceo-text">
-                    <span class="subtitle">MEET OUR FOUNDER</span>
-                    <h2>Guided by<br>Passion and Grace</h2>
-                    <p>Bonie Yoga Studio was founded on the belief that yoga is for everyone. Our Co-founder and CEO brings years of dedication and expertise, creating a sanctuary where traditional Indian practices meet modern wellness needs.</p>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Classes Each Month</span>
                 </div>
-                <div class="ceo-image-wrapper">
-                    <img src="ceo.jpg" alt="Co-founder and CEO" class="ceo-image" onerror="this.src='https://via.placeholder.com/400x500?text=Please+Save+Your+Image+Here+As+ceo.jpg'">
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Possibilities Within</span>
                 </div>
             </div>
         </section>
 
-        <section id="classes" class="classes">
-            <h2>Top Classes</h2>
+        <!-- ========== MEET YOUR GUIDE ========== -->
+        <section class="guide" id="about">
+            <div class="guide-blob"></div>
+            <div class="guide-image-wrap">
+                <div class="guide-image-frame">
+                    <img src="images/guide.png" alt="Elara — Yoga Guide & Founder" class="guide-img">
+                </div>
+            </div>
+            <div class="guide-text">
+                <span class="eyebrow">Meet Your Guide</span>
+                <h2>MEET YOUR GUIDE,<br><em>ELARA.</em></h2>
+                <p>Elara is a transformative yoga teacher — guiding you to the space between effort and ease, where real healing happens. As a professional mind-and-body breathwork educator, she travels internationally hosting workshops, seminars, and retreats. When your mind and breath connect there, there's a harmony that can serve as a release valve for the stresses and anxieties that occupy your life.</p>
+                <div class="guide-badges">
+                    <span class="badge">RYT-500 Certified</span>
+                    <span class="badge">Pranayama Specialist</span>
+                    <span class="badge">Mindfulness Coach</span>
+                </div>
+                <a href="#book" class="btn-terracotta">Work With Elara</a>
+            </div>
+        </section>
+
+        <!-- ========== OFFERINGS ========== -->
+        <section class="offerings" id="offerings">
+            <div class="offerings-header">
+                <span class="eyebrow">What We Offer</span>
+                <h2>Choose Your<br><em>Path to Stillness</em></h2>
+            </div>
+            <div class="offerings-grid">
+                <div class="offering-card" id="offering-private">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="16" r="7" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Private Sessions</h3>
+                    <p>One-on-one sessions tailored entirely to your body, your goals, and your breath. Experience the deepest level of connection and transformation.</p>
+                    <div class="offering-price">From <strong>₹3,999</strong> / session</div>
+                    <a href="#book" class="offering-link">Book Now →</a>
+                </div>
+
+                <div class="offering-card featured" id="offering-group">
+                    <span class="featured-tag">Most Popular</span>
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M2 40c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M30 40c0-5.523 4.477-10 10-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Group Workshops</h3>
+                    <p>Join facilitated group sessions — energizing morning flows, soothing evening meditations, and immersive weekend workshops. Build community, build you.</p>
+                    <div class="offering-price">From <strong>₹1,200</strong> / class</div>
+                    <a href="#book" class="offering-link">Book Now →</a>
+                </div>
+
+                <div class="offering-card" id="offering-online">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="10" width="36" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 38h16M24 34v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M20 22l10-5-10-5v10z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Online Courses</h3>
+                    <p>Curated and collaborative online courses available to you at any time, any place. Your practice, on your schedule, in your space.</p>
+                    <div class="offering-price">From <strong>₹2,499</strong> / course</div>
+                    <a href="#book" class="offering-link">Explore Courses →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ASANA GUIDE ========== -->
+        <section class="poses-section" id="poses">
+            <div class="poses-bg-text">ASANA</div>
+            <div class="poses-header">
+                <span class="eyebrow">Bonie's Asana Guide</span>
+                <h2>Master<br><em>Your Poses</em></h2>
+                <p class="poses-intro">Explore foundational hatha and vinyasa yoga poses taught at our studio — their correct alignment and transformative benefits.</p>
+            </div>
+            <div class="poses-grid">
+                <div class="pose-card reveal">
+                    <div class="pose-image-wrap">
+                        <img src="images/pose_vrikshasana.png" alt="Vrikshasana – Tree Pose" class="pose-img">
+                    </div>
+                    <div class="pose-body">
+                        <div class="pose-meta-row">
+                            <span class="pose-sanskrit">Vrikshasana</span>
+                            <span class="pose-tag beginner">Beginner</span>
+                        </div>
+                        <h3>Tree Pose</h3>
+                        <p>A foundational standing balance pose that replicates the steady, graceful stance of a tree, promoting stability and mental focus.</p>
+                        <div class="pose-details">
+                            <div><strong>Focus</strong> Balance &amp; Concentration</div>
+                            <div><strong>Benefits</strong> Strengthens legs, opens hips, improves posture, calms the mind</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pose-card reveal">
+                    <div class="pose-image-wrap">
+                        <img src="images/pose_trikonasana.png" alt="Trikonasana – Triangle Pose" class="pose-img">
+                    </div>
+                    <div class="pose-body">
+                        <div class="pose-meta-row">
+                            <span class="pose-sanskrit">Trikonasana</span>
+                            <span class="pose-tag intermediate">Intermediate</span>
+                        </div>
+                        <h3>Triangle Pose</h3>
+                        <p>An essential standing posture that stretches and strengthens the entire body, creating space and expanding energy.</p>
+                        <div class="pose-details">
+                            <div><strong>Focus</strong> Stretch &amp; Core Strength</div>
+                            <div><strong>Benefits</strong> Stretches spine, hips, and chest; improves digestion and reduces anxiety</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pose-card reveal">
+                    <div class="pose-image-wrap">
+                        <img src="images/pose_ustrasana.png" alt="Ustrasana – Camel Pose" class="pose-img">
+                    </div>
+                    <div class="pose-body">
+                        <div class="pose-meta-row">
+                            <span class="pose-sanskrit">Ustrasana</span>
+                            <span class="pose-tag intermediate">Intermediate</span>
+                        </div>
+                        <h3>Camel Pose</h3>
+                        <p>A deep backbend that opens the entire front body, encouraging emotional release and deep, expansive breathing.</p>
+                        <div class="pose-details">
+                            <div><strong>Focus</strong> Chest &amp; Heart Opening</div>
+                            <div><strong>Benefits</strong> Increases spinal flexibility, stretches throat, chest, and abdomen, builds confidence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pose-card reveal">
+                    <div class="pose-image-wrap">
+                        <img src="images/pose_balasana.png" alt="Balasana – Child's Pose" class="pose-img">
+                    </div>
+                    <div class="pose-body">
+                        <div class="pose-meta-row">
+                            <span class="pose-sanskrit">Balasana</span>
+                            <span class="pose-tag beginner">Beginner</span>
+                        </div>
+                        <h3>Child's Pose</h3>
+                        <p>A gentle resting posture that provides sanctuary, soothing the nervous system and releasing deep muscle tension.</p>
+                        <div class="pose-details">
+                            <div><strong>Focus</strong> Restorative &amp; Release</div>
+                            <div><strong>Benefits</strong> Gently stretches hips and lower back, calms stress, serves as an active resting pose</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CLASSES ========== -->
+        <section class="classes" id="classes">
+            <div class="classes-header">
+                <span class="eyebrow">Top Classes</span>
+                <h2>Find Your<br><em>Perfect Flow</em></h2>
+            </div>
             <div class="classes-grid">
                 <div class="class-card">
-                    <img src="images/yin_yang.png" alt="Yin Yang Yoga">
+                    <div class="class-img-wrap">
+                        <img src="images/yin_yang.png" alt="Yin Yang Yoga">
+                        <div class="class-hover-overlay">
+                            <a href="#book" class="btn-class-book">Book Class</a>
+                        </div>
+                    </div>
                     <div class="class-info">
-                        <h3>YIN YANG YOGA <span>+</span></h3>
-                        <p>Harmonize dynamic and passive energies with gentle stretching and deep relaxation for inner balance.</p>
+                        <div class="class-tag">60 min · All Levels</div>
+                        <h3>Yin Yang Yoga</h3>
+                        <p>Harmonize dynamic and passive energies with gentle stretching and deep relaxation for inner balance and peace.</p>
                     </div>
                 </div>
+
                 <div class="class-card">
-                    <img src="images/kundalini.png" alt="Kundalini Yoga">
+                    <div class="class-img-wrap">
+                        <img src="images/kundalini.png" alt="Kundalini Yoga">
+                        <div class="class-hover-overlay">
+                            <a href="#book" class="btn-class-book">Book Class</a>
+                        </div>
+                    </div>
                     <div class="class-info">
-                        <h3>KUNDALINI YOGA <span>+</span></h3>
-                        <p>Unlock vitality and spiritual potential with engaging movements, breathwork, and meditation.</p>
+                        <div class="class-tag">75 min · Intermediate</div>
+                        <h3>Kundalini Yoga</h3>
+                        <p>Unlock vitality and spiritual potential with engaging movements, breathwork, and uplifting meditation practice.</p>
                     </div>
                 </div>
+
                 <div class="class-card">
-                    <img src="images/restorative.png" alt="Restorative Yoga">
+                    <div class="class-img-wrap">
+                        <img src="images/restorative.png" alt="Restorative Yoga">
+                        <div class="class-hover-overlay">
+                            <a href="#book" class="btn-class-book">Book Class</a>
+                        </div>
+                    </div>
                     <div class="class-info">
-                        <h3>RESTORATIVE YOGA <span>+</span></h3>
-                        <p>Slow down and experience deep relaxation through gentle poses with props and passive stretching.</p>
+                        <div class="class-tag">90 min · Beginner</div>
+                        <h3>Restorative Yoga</h3>
+                        <p>Slow down and experience deep relaxation through gentle, supported poses with props and passive long-hold stretching.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="explore-all">
-                <a href="#explore" class="btn-tertiary">EXPLORE ALL CLASSES</a>
+            <div class="classes-cta">
+                <a href="#offerings" class="btn-outline-dark">Explore All Classes</a>
             </div>
         </section>
 
-        <section id="poses" class="poses-section">
-            <div class="poses-container">
-                <span class="subtitle">BONIE'S ASANA GUIDE</span>
-                <h2>Master Your Poses</h2>
-                <p class="poses-intro">Explore some of the foundational hatha and vinyasa yoga poses taught at our studio, detailing their correct alignment and transformative benefits.</p>
-                
-                <div class="poses-grid">
-                    <div class="pose-card">
-                        <div class="pose-image-wrapper">
-                            <img src="images/pose_vrikshasana.png" alt="Vrikshasana - Tree Pose" class="pose-image">
-                        </div>
-                        <div class="pose-content">
-                            <div class="pose-header">
-                                <span class="pose-sanskrit">Vrikshasana</span>
-                                <span class="pose-tag beginner">Beginner</span>
-                            </div>
-                            <h3>Tree Pose</h3>
-                            <p class="pose-desc">A foundational standing balance pose that replicates the steady, graceful stance of a tree, promoting stability and mental focus.</p>
-                            <div class="pose-meta">
-                                <strong>Focus:</strong> Balance & Concentration<br>
-                                <strong>Benefits:</strong> Strengthens legs, opens hips, improves posture, and calms the mind.
+        <!-- ========== TESTIMONIALS ========== -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials-inner">
+                <span class="eyebrow light">What Our Students Say</span>
+                <h2>From the<br><em>Journal</em></h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p>I have consistently seen working with this teacher has only accelerated my already creative work. Her teaching, speaking and her belief of reference of evidence, all felt real. It was one journey I wish everyone could take.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <strong>Ananya Sharma</strong>
+                                <span>Private Student, Mumbai</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="pose-card">
-                        <div class="pose-image-wrapper">
-                            <img src="images/pose_trikonasana.png" alt="Trikonasana - Triangle Pose" class="pose-image">
-                        </div>
-                        <div class="pose-content">
-                            <div class="pose-header">
-                                <span class="pose-sanskrit">Trikonasana</span>
-                                <span class="pose-tag intermediate">Intermediate</span>
-                            </div>
-                            <h3>Triangle Pose</h3>
-                            <p class="pose-desc">An essential standing posture that stretches and strengthens the entire body, creating space and expanding energy.</p>
-                            <div class="pose-meta">
-                                <strong>Focus:</strong> Stretch & Core Strength<br>
-                                <strong>Benefits:</strong> Stretches spine, hips, and chest; improves digestion and reduces anxiety.
+                    <div class="testimonial-card featured-testimonial">
+                        <div class="quote-mark">"</div>
+                        <p>I experienced true stillness for the first time in years. Her guidance is gentle, intuitive, and completely transformative. I left every session feeling lighter, clearer, and more connected to myself.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong>Rohan Kapoor</strong>
+                                <span>Group Workshop, Delhi</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="pose-card">
-                        <div class="pose-image-wrapper">
-                            <img src="images/pose_ustrasana.png" alt="Ustrasana - Camel Pose" class="pose-image">
-                        </div>
-                        <div class="pose-content">
-                            <div class="pose-header">
-                                <span class="pose-sanskrit">Ustrasana</span>
-                                <span class="pose-tag intermediate">Intermediate</span>
-                            </div>
-                            <h3>Camel Pose</h3>
-                            <p class="pose-desc">A deep backbend that opens up the entire front body, encouraging emotional release and deep breathing.</p>
-                            <div class="pose-meta">
-                                <strong>Focus:</strong> Chest & Heart Opening<br>
-                                <strong>Benefits:</strong> Increases spinal flexibility, stretches throat, chest, and abdomen, and builds confidence.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pose-card">
-                        <div class="pose-image-wrapper">
-                            <img src="images/pose_balasana.png" alt="Balasana - Child's Pose" class="pose-image">
-                        </div>
-                        <div class="pose-content">
-                            <div class="pose-header">
-                                <span class="pose-sanskrit">Balasana</span>
-                                <span class="pose-tag beginner">Beginner</span>
-                            </div>
-                            <h3>Child's Pose</h3>
-                            <p class="pose-desc">A gentle resting posture that provides sanctuary, helping to soothe the nervous system and release muscle tension.</p>
-                            <div class="pose-meta">
-                                <strong>Focus:</strong> Restorative & Release<br>
-                                <strong>Benefits:</strong> Gently stretches hips and lower back, calms stress, and serves as an active resting pose.
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p>I explored and found internal and external elements and more sensational attributes that could act and leave a lasting imprint. The course truly changed how I breathe and move through life.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div>
+                                <strong>Priya Mehta</strong>
+                                <span>Online Course Student</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="portfolio-section">
-            <div class="portfolio-container">
-                <h2>Our Yoga Portfolio</h2>
-                <div class="portfolio-grid">
-                    <img src="images/portfolio/1.jpg" alt="Yoga pose 1" class="portfolio-img">
-                    <img src="images/portfolio/2.jpg" alt="Yoga pose 2" class="portfolio-img">
-                    <img src="images/portfolio/3.jpg" alt="Yoga pose 3" class="portfolio-img">
-                    <img src="images/portfolio/4.jpg" alt="Yoga pose 4" class="portfolio-img">
-                    <img src="images/portfolio/5.jpg" alt="Yoga pose 5" class="portfolio-img">
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </section>
 
-        <section id="private" class="private-classes">
-            <div class="private-container">
-                <div class="private-content">
-                    <h2>Private Class Packages</h2>
-                    <p>Elevate your practice with personalized attention. Our one-on-one sessions are tailored specifically to your goals, body, and schedule.</p>
-                    
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Exclusive Mastery Package</h3>
-                            <div class="price"><span>₹</span>39,999</div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>✓ 10 Private One-on-One Sessions</li>
-                            <li>✓ Personalized Alignment Assessment</li>
-                            <li>✓ Custom Home Practice Plan</li>
-                            <li>✓ Priority Booking and Support</li>
-                        </ul>
-                        <a href="#book-private" class="btn-primary" style="display:block; text-align:center; margin-top:20px;">PURCHASE PACKAGE</a>
+        <!-- ========== PRICING ========== -->
+        <section class="pricing" id="private">
+            <div class="pricing-container">
+                <div class="pricing-text">
+                    <span class="eyebrow">Private Class Packages</span>
+                    <h2>Invest in<br><em>Your Practice</em></h2>
+                    <p>Elevate your journey with personalized, one-on-one attention. Our packages are crafted to honour your unique path, body, and goals.</p>
+                </div>
+                <div class="pricing-card-new">
+                    <div class="pricing-card-header">
+                        <span class="pricing-badge">Signature Package</span>
+                        <div class="pricing-amount"><span>₹</span>39,999</div>
+                        <div class="pricing-period">10 Private Sessions</div>
                     </div>
+                    <ul class="pricing-features-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            10 Private One-on-One Sessions
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Personalized Alignment Assessment
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Custom Home Practice Plan
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Priority Booking &amp; WhatsApp Support
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Lifetime Access to Online Resources
+                        </li>
+                    </ul>
+                    <a href="#book" class="btn-terracotta full-width" id="purchase-btn">Purchase Package</a>
                 </div>
             </div>
         </section>
+
+        <!-- ========== BOOK CTA ========== -->
+        <section class="cta-section" id="book">
+            <div class="cta-bg-blob"></div>
+            <div class="cta-content">
+                <span class="eyebrow light">Ready to Begin?</span>
+                <h2>Your Journey to<br><em>Stillness Starts Now</em></h2>
+                <p>Take the first step. Book a free 15-minute discovery call and let us find the right path for you.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:hello@bonieyoga.com" class="btn-cream" id="contact-email-btn">hello@bonieyoga.com</a>
+                    <a href="tel:+911234567890" class="btn-outline-cream" id="contact-phone-btn">+91 12345 67890</a>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">BONIE</span>
+                <p>Holistic breathwork &amp; yoga for clarity, connection, and inner peace.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram" id="social-instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube" id="social-youtube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="none" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" id="social-facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#offerings">Offerings</a></li>
+                    <li><a href="#poses">Asanas</a></li>
+                    <li><a href="#testimonials">Journal</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Classes</h4>
+                <ul>
+                    <li><a href="#offering-private">Private Sessions</a></li>
+                    <li><a href="#offering-group">Group Workshops</a></li>
+                    <li><a href="#offering-online">Online Courses</a></li>
+                    <li><a href="#private">Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Find Us</h4>
+                <p>Mumbai, Maharashtra<br>India — 400001</p>
+                <p>hello@bonieyoga.com</p>
+                <p>+91 12345 67890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BONIE Yoga Studio. All rights reserved.</p>
+            <p>Crafted with <em>love &amp; breath</em></p>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close nav on link click
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.pose-card, .offering-card, .class-card, .testimonial-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => observer.observe(el));
+
+        // Smooth active nav highlight
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+            });
+        });
+    </script>
 </body>
 </html>
